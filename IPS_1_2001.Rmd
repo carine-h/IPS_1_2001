@@ -1,0 +1,53 @@
+---
+title: "IPS 1"
+author: "Carine Hajjar"
+date: "9/17/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+# Question 1
+##A)
+The systematic component is: 
+\begin{align*}
+\mu_{i} = 2 + 10X_{i}
+\end{align*}
+
+The stochastic component is: 
+\begin{align*}
+\sigma^{2} = 9
+\end{align*}
+
+##B)
+1,000 observations where 500 have $X_{i} = 1$ and 500 have $X_{i} = 0$
+Find $Y_{i}$ and plot its distribution
+
+```{r}
+# instructions
+  # simulate Yi for each person and plot distribution of Yi
+  # describe plot 
+
+```
+
+```{r}
+# 1. B EXAMPLE W20 OBS
+x<- c(rep(0,10), rep(1, 10))  ## make 1000
+mu <- 2 +10*x 
+# sigma
+rnorm(n= 20, mean = mu, sd = sqrt(9))# sd is quare root of variance
+
+# make 1000 
+
+# plot 
+
+
+
+```
+
+
+
+
+
